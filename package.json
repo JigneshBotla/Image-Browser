@@ -1,0 +1,25 @@
+{
+  "name": "jignesh-image-browser",
+  "version": "1.0.0",
+  "main": "app.js",
+  "author": "Jignesh",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
+    "express": "^4.21.1"
+  },
+  "scripts": {
+    "start": "node app.js"
+  },
+  "description": "dynamic website to generate random images related to the keywords typed",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JigneshBotla/Image-Browser.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JigneshBotla/Image-Browser/issues"
+  },
+  "homepage": "https://github.com/JigneshBotla/Image-Browser#readme"
+}

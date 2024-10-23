@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Image Generator</title>
+    <style>
+        body {
+            background-color: #272829;
+            text-align: center;
+        }
+        h1, p {
+            color: white;
+        }
+        img {
+            width: 500px;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Random Image</h1>
+    <p>related to your keyword</p>
+    <% if(locals.img_src){%>
+        <img src="<%=img_src%>" alt="">
+    <%}%>
+</body>
+</html>

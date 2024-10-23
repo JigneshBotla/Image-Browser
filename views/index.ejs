@@ -1,0 +1,56 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <title>Random</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background-image: url('https://www.pixelstalk.net/wp-content/uploads/2016/07/Free-Amazing-Background-Images-Nature.jpg'); /* Use any background image */
+            background-size: cover;
+            background-position: center;
+        }
+        h1 {
+          text-align: center;
+            color: rgba(56, 115, 179, 0.5);
+            margin-top: 10%;
+        }
+        .col-sm-4 {
+            margin: auto;
+        }
+        .translucent-background {
+            background-color: rgba(255, 255, 255, 0.5); 
+            backdrop-filter: blur(10px); 
+            -webkit-backdrop-filter: blur(10px); 
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Jignesh Image Browser</h1>
+    <div class="row register">
+        <div class="col-sm-4">
+          <div class="card translucent-background">
+            <div class="card-body">
+                <form action="/image_page" method="POST">
+                    <div class="form-group">
+                      <label for="keyword">Enter Keyword</label>
+                      <input type="text" class="form-control" name="keyword">
+                    </div>
+                    <button type="submit" class="btn btn-dark">Search</button>
+                  </form>
+            </div>
+          </div>
+        </div>
+    </div>
+</body>
+</html>
